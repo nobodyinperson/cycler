@@ -1,6 +1,7 @@
+import sys
 from setuptools import setup
 
-setup(name='cycler',
+setup(name='python3-cycler' if sys.argv[1] == "bdist_rpm" else "cycler",
       version='0.10.0',
       author='Thomas A Caswell',
       author_email='matplotlib-users@python.org',
